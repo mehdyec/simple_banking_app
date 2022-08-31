@@ -43,7 +43,7 @@ def show_menu():
     4. Open an account
     5. Close an account
 
-    To Exit please press any key that is not in the menu!
+    To Exit please press any number that is not in the menu!
     """)
 
 
@@ -112,5 +112,5 @@ while menu_open:
         else:
             print("No such account")
     else:
-        menu_open = False
         print("Bye!")
+        menu_open = False
