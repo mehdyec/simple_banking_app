@@ -48,10 +48,12 @@ def show_menu():
 
 
 def account_exists(acc_num):
+    found_account = False
     for account in accounts:
         if account.account_number == acc_num:
-            return account 
-        return False
+            found_account = account 
+            break 
+    return found_account
 
 
 def update_balance(acc_num, action_type):
